@@ -1,0 +1,4 @@
+interface:
+  display_name: "简历访谈与 LaTeX 制作"
+  short_description: "分轮访谈生成大纲，联网研究目标岗位，按固定模板润色并制作可编辑 LaTeX 与 PDF 简历"
+  default_prompt: "使用 $resume-latex-workflow，分轮收集我的经历，生成大纲，按模板制作并润色 LaTeX 和 PDF 简历。"

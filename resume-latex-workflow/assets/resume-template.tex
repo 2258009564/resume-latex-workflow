@@ -1,0 +1,58 @@
+% Replace fields with candidate-confirmed facts. Compile with XeLaTeX.
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKmainfont{Microsoft YaHei}}{\IfFontExistsTF{Noto Sans CJK SC}{\setCJKmainfont{Noto Sans CJK SC}}{\setCJKmainfont{FandolHei-Regular}}}
+\usepackage[left=0.65in,right=0.65in,top=0.50in,bottom=0.50in]{geometry}
+\usepackage{xcolor,graphicx,titlesec,enumitem,hyperref}
+\definecolor{accent}{HTML}{365A78}
+\definecolor{pending}{HTML}{AA5723}
+\hypersetup{colorlinks=true,urlcolor=accent}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{6pt}
+\setlist[itemize]{leftmargin=1.3em,topsep=3pt,itemsep=4pt,parsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\renewcommand{\baselinestretch}{1.12}
+\newcommand{\pendingfield}{\textcolor{pending}{\textbf{待补充}}}
+\newcommand{\projectheading}[3]{%
+{\fontsize{12}{15}\selectfont\bfseries #1}\hfill
+{\fontsize{11}{14}\selectfont\href{#2}{#3}}\par}
+\begin{document}
+\pagenumbering{gobble}
+\section{基本信息}
+\IfFileExists{avatar.jpg}{\def\headerwidth{0.77\textwidth}}{\def\headerwidth{\textwidth}}
+\begin{minipage}[t]{\headerwidth}
+\vspace{0pt}
+{\fontsize{22}{26}\selectfont\bfseries 姓名待补充}\par\vspace{5pt}
+{\color{accent}求职方向：待补充}\quad |\quad 意向城市：待补充\par\vspace{3pt}
+邮箱：待补充\quad |\quad 电话：待补充\par\vspace{3pt}
+GitHub／主页：待补充\par\vspace{3pt}
+到岗：\pendingfield\quad |\quad 每周出勤：\pendingfield\quad |\quad 实习时长：\pendingfield
+\end{minipage}%
+\IfFileExists{avatar.jpg}{\hfill\begin{minipage}[t]{0.18\textwidth}\vspace{4pt}\includegraphics[width=\linewidth]{avatar.jpg}\end{minipage}}{}
+\par\vspace{3pt}
+\section{教育背景}
+{\large\textbf{学校待补充}｜专业／学历待补充}\hfill 时间待补充\par
+排名／奖学金：待补充
+\section{项目经历}
+% With no known URL, replace the heading with plain title, omit the link.
+{\fontsize{12}{15}\selectfont\bfseries 项目名称待补充｜语言／技术栈待补充}\par
+\textbf{描述：}项目背景与目标待补充。
+\begin{itemize}
+\item 个人贡献、实施方法与解决的问题待补充。
+\item 核心实现及技术细节待补充。
+\end{itemize}
+\textbf{验证结果：}结果与证据待补充。
+% Add a second project only with facts or an explicit request for reserved space.
+\section{竞赛荣誉}
+奖项、年份及级别待补充\par
+% Optional competitive programming profile belongs here, as a real hyperlink.
+\section{技能掌握}
+\begin{itemize}[itemsep=2pt]
+\item 已确认的语言、熟练度与使用范围待补充。
+\item 与目标岗位相关且有经历支持的专业能力待补充。
+\item 开发工具与真实使用经验待补充。
+\end{itemize}
+\end{document}
