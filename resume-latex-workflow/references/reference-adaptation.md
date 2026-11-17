@@ -23,3 +23,5 @@
 借鉴“概述＋职责”及句内重点，不复制他人信息和整段文字。单条挑出关键机制与可证明结果加粗，常规字体与强调字体保持用户指定风格，渲染后确认对比。参考中的专业技能若能把网络、操作系统、算法与工程分析串成一个能力段，可采用这种组织方式，不引入对方独有的SDK、监控平台、微服务组件或熟练度。
 
 技术写作校验可从[Raft 原论文](https://raft.github.io/raft.pdf)、[etcd Raft 原始实现](https://github.com/etcd-io/raft)、[Learner 设计](https://etcd.io/docs/v3.5/learning/design-learner/)及[PD 调度实践](https://docs.pingcap.com/tidb/stable/pd-scheduling-best-practices/)查起；这些是机制来源，不是候选人完成记录。
+
+语言能力按已确认的证书与使用场景组织，例如英语考试证书加长期阅读英文题面/资料的经历，可归纳为阅读与信息提取能力；不据此自动写成英语听说流利、商务沟通或专业写作能力。用户指定保留的能力句应逐字核对，不能被合并技能时遗漏。

@@ -10,7 +10,7 @@
 \usepackage{xcolor,graphicx,titlesec,enumitem,hyperref}
 \definecolor{accent}{HTML}{1F69DF}
 \definecolor{pending}{HTML}{AA5723}
-\hypersetup{colorlinks=true,urlcolor=accent}
+\hypersetup{colorlinks=true,urlcolor=black}
 \titleformat{\section}{\fontsize{12.5}{15}\selectfont\bfseries\color{accent}}{}{0em}{}[\color{accent}\titlerule]
 \titlespacing*{\section}{0pt}{8pt}{4pt}
 \setlist[itemize]{leftmargin=1.3em,topsep=3pt,itemsep=3pt,parsep=0pt}
@@ -21,7 +21,7 @@
 \newcommand{\projectheading}[4]{%
 {\fontsize{12}{15}\selectfont\bfseries #1}\quad
 {\fontsize{11}{14}\selectfont\href{#2}{#3}}\hfill #4\par}
-\newcommand{\awardentry}[3]{#1\hfill\textbf{#2}\quad #3\par}
+\newcommand{\awardentry}[3]{#1\hfill\textbf{#2}\quad\textbf{#3}\par}
 \begin{document}
 \pagenumbering{gobble}
 \section{基本信息}
