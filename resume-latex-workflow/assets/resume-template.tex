@@ -5,7 +5,7 @@
 \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
 % Keep regular and emphasized Chinese in the requested Song/serif style.
 % SimSun has no native bold face: controlled stroke expansion needs visual QA.
-\IfFontExistsTF{SimSun}{\setCJKmainfont[AutoFakeBold=2.3]{SimSun}}{\IfFontExistsTF{Noto Serif CJK SC}{\setCJKmainfont[BoldFont={Noto Serif CJK SC Bold}]{Noto Serif CJK SC}}{\setCJKmainfont[BoldFont={FandolSong-Bold}]{FandolSong-Regular}}}
+\IfFontExistsTF{SimSun}{\setCJKmainfont[AutoFakeBold=3.6]{SimSun}}{\IfFontExistsTF{Noto Serif CJK SC}{\setCJKmainfont[BoldFont={Noto Serif CJK SC Bold}]{Noto Serif CJK SC}}{\setCJKmainfont[BoldFont={FandolSong-Bold}]{FandolSong-Regular}}}
 \usepackage[left=0.65in,right=0.65in,top=0.50in,bottom=0.50in]{geometry}
 \usepackage{xcolor,graphicx,titlesec,enumitem,hyperref}
 \definecolor{accent}{HTML}{1F69DF}
@@ -49,7 +49,8 @@ GitHub／主页：待补充\par\vspace{3pt}
 项目链接：待补充\hfill 起止年月：待补充\par
 \textbf{描述：}项目背景与目标待补充。
 \begin{itemize}
-\item \textbf{职责与问题：}个人贡献待补充；在句内突出\textbf{关键实现机制}，说明解决的问题。
+% Example if supported: 为降低上传中断后的重传开销，设计分片进度记录与补传接口，使客户端只需重传缺失分片。
+\item \textbf{职责主题待补充：}为解决问题待补充，设计\textbf{方案待补充}，实现功能或效果待补充。
 \item \textbf{恢复与验证：}核心实现及边界待补充，补充有依据的验证结果，不填写演示性能数字。
 \end{itemize}
 \textbf{验证结果：}结果与证据待补充。
